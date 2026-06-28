@@ -381,32 +381,61 @@ input {
 
 /*=============== BUTTONS ===============*/
 .button {
-  display: inline-block;
-  background-color: var(--first-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+
+  background: var(--first-color);
   color: var(--white-color);
-  padding: 1rem 2rem;
+
+  padding: .95rem 2rem;
+  border: none;
+  border-radius: 999px; /* Fully rounded */
+
   font-weight: var(--font-semi-bold);
-  transition: .3s;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: all .3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,.18);
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background: var(--first-color-alt);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.28);
+}
+
+.button:active {
+  transform: translateY(-1px) scale(.98);
+  box-shadow: 0 6px 15px rgba(0,0,0,.2);
+}
+
+.button:focus-visible {
+  outline: 3px solid rgba(255,255,255,.35);
+  outline-offset: 4px;
 }
 
 .button--flex {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  column-gap: .25rem;
+  column-gap: .45rem;
 }
 
 .button--link {
   background: none;
+  box-shadow: none;
   padding: 0;
+  border-radius: 0;
 }
 
 .button--link:hover {
   background: none;
+  transform: none;
+  box-shadow: none;
 }
+
 
 /*=============== ABOUT ===============*/
 .about__data {
