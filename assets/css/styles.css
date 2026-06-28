@@ -1504,3 +1504,32 @@ body.dark-mode * {
 
     color:#fff;
 }
+
+
+
+.chapter-status{
+    display:inline-block;
+    margin-top:.6rem;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:.78rem;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.chapter-status.incomplete{
+    background:#d32f2f;
+    color:#fff;
+}
+
+
+.search-badge{
+    float:right;
+    background:#d32f2f;
+    color:#fff;
+    padding:3px 10px;
+    border-radius:15px;
+    font-size:.72rem;
+    font-weight:700;
+    text-transform:uppercase;
+}

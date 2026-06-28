@@ -200,12 +200,15 @@ return;
 
 }
 
-const matches=chapters.filter(card=>{
+const search = value.toLowerCase();
 
-return card.querySelector("h3")
-.innerText
-.toLowerCase()
-.includes(value.toLowerCase());
+const matches = chapters.filter(card => {
+
+    const title = card.querySelector("h3").innerText.toLowerCase();
+
+    const tags = (card.dataset.tags || "").toLowerCase();
+
+    return title.includes(search) || tags.includes(search);
 
 });
 
@@ -223,7 +226,13 @@ const item=document.createElement("div");
 
 item.className="search-item";
 
-item.innerHTML="🔍 "+card.querySelector("h3").innerText;
+const title = card.querySelector("h3").innerText;
+
+const status = card.dataset.tags.includes("incomplete")
+    ? '<span class="search-badge">Incomplete</span>'
+    : '';
+
+item.innerHTML = `${title} ${status}`;
 
 item.onclick=()=>{
 
@@ -306,3 +315,4 @@ items[selected].click();
 });
 
 }
+
