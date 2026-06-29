@@ -184,6 +184,16 @@ if(input){
 
 const chapters=[...document.querySelectorAll(".chapter-card")];
 
+// Hide eye icon for unavailable PDFs
+chapters.forEach(card => {
+    const link = card.querySelector("a");
+
+    if (link && link.getAttribute("href") === "pdfunav.html") {
+        const eye = link.querySelector(".ri-eye-line");
+        if (eye) eye.style.display = "none";
+    }
+});
+
 let selected=-1;
 
 function showResults(value){
@@ -229,6 +239,8 @@ matches.forEach(card=>{
 
     const pdf = card.querySelector("a").href;
 
+    const unavailable = card.querySelector("a").getAttribute("href") === "pdfunav.html";
+
     let status = "";
 
     const tags = (card.dataset.tags || "").toLowerCase();
@@ -244,18 +256,22 @@ matches.forEach(card=>{
     }
 
     item.innerHTML = `
-        <div class="search-title">${title}</div>
+    <div class="search-title">${title}</div>
 
-        ${status}
+    ${status}
 
-        <div class="search-actions">
-            <i class="ri-arrow-down-line search-scroll" title="Go to Chapter"></i>
-            <a href="${pdf}" target="_blank" class="search-open" title="Open PDF">
-                <i class="ri-eye-line"></i>
-            </a>
-        </div>
-    `;
+    <div class="search-actions">
+        <i class="ri-arrow-down-line search-scroll" title="Go to Chapter"></i>
 
+        ${
+            unavailable
+                ? ""
+                : `<a href="${pdf}" target="_blank" class="search-open" title="Open PDF">
+                        <i class="ri-eye-line"></i>
+                   </a>`
+        }
+    </div>
+`;
     item.querySelector(".search-scroll").onclick=(e)=>{
         e.stopPropagation();
 
@@ -268,10 +284,13 @@ matches.forEach(card=>{
         input.value="";
     };
 
-    item.querySelector(".search-open").onclick=(e)=>{
+    const openBtn = item.querySelector(".search-open");
+
+if (openBtn) {
+    openBtn.onclick = (e) => {
         e.stopPropagation();
     };
-
+}
     results.appendChild(item);
 
 });
