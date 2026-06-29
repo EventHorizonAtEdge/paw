@@ -228,9 +228,15 @@ item.className="search-item";
 
 const title = card.querySelector("h3").innerText;
 
-const status = card.dataset.tags.includes("incomplete")
-    ? '<span class="search-badge">Incomplete</span>'
-    : '';
+let status = "";
+
+const tags = (card.dataset.tags || "").toLowerCase();
+
+if (tags.includes("not-started")) {
+    status = '<span class="search-badge not-started">Not Started</span>';
+} else if (tags.includes("incomplete")) {
+    status = '<span class="search-badge incomplete">Incomplete</span>';
+}
 
 item.innerHTML = `${title} ${status}`;
 

@@ -334,7 +334,9 @@ input {
 
 .home__social {
   display: flex;
-  flex-direction: column;
+  .chapter-card{
+    flex-direction:row;
+};
   row-gap: 1.5rem;
 }
 
@@ -640,7 +642,9 @@ input {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+ .chapter-card{
+    flex-direction:row;
+};
   justify-content: space-between;
   padding: .75rem .75rem 1rem;
 }
@@ -783,7 +787,9 @@ input {
 
 .footer__rights {
   display: flex;
-  flex-direction: column;
+  .chapter-card{
+    flex-direction:row;
+};
   row-gap: 1.5rem;
   text-align: center;
 }
@@ -1274,15 +1280,16 @@ body.dark-mode * {
 
 
 .notes__container{
-    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-    gap:2rem;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1.5rem;
     margin-top:3rem;
 }
 
 .notes__card{
     background:var(--container-color);
     border-radius:1.25rem;
-    padding:2rem;
+    padding:1.3rem;
     text-align:center;
     box-shadow:0 8px 30px rgba(0,0,0,.15);
     transition:.35s;
@@ -1293,13 +1300,13 @@ body.dark-mode * {
 }
 
 .notes__icon{
-    font-size:3rem;
+    font-size:2.3rem;
     color:var(--first-color);
     margin-bottom:1rem;
 }
 
 .notes__title{
-    font-size:1.3rem;
+    font-size:1.15rem;
     margin-bottom:.3rem;
 }
 
@@ -1313,6 +1320,8 @@ body.dark-mode * {
     justify-content:center;
     gap:.8rem;
     flex-wrap:wrap;
+    padding: .6rem 1.1rem;
+    font-size: .85rem;
 }
 
 .notes__card{
@@ -1341,6 +1350,15 @@ body.dark-mode * {
     align-items:center;
     gap:.7rem;
     font-size:2rem;
+}
+
+.subject-block h3{
+    margin-bottom:1rem;
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    font-size:1.5rem;
+    font-weight:600;
 }
 
 .chapter-card{
@@ -1399,7 +1417,52 @@ body.dark-mode * {
 
 .chapter-card{
     flex-direction:column;
-    text-align:center;
+    text-align:center;@media screen and (max-width:768px){
+
+.chapter-card{
+    display:flex;
+    flex-direction:row;      /* keep horizontal */
+    align-items:center;
+    gap:1rem;
+    padding:1rem 1.2rem;
+    text-align:left;
+}
+
+.chapter-number{
+    width:55px;
+    height:55px;
+    font-size:1.1rem;
+    flex-shrink:0;
+}
+
+.chapter-content{
+    flex:1;
+    min-width:0;
+}
+
+.chapter-content h3{
+    font-size:1rem;
+    margin-bottom:.3rem;
+}
+
+.chapter-content p{
+    font-size:.85rem;
+}
+
+.chapter-status{
+    margin-top:.45rem;
+}
+
+.button--small{
+    padding:.75rem;
+    min-width:50px;
+    flex-shrink:0;
+}
+
+.chapter-content h3{
+    word-break:break-word;
+}
+}
 }
 
 }
@@ -1551,14 +1614,102 @@ body.dark-mode * {
     color:#fff;
 }
 
+.chapter-status.not-started{
+    background:#fbc02d;
+    color:#000;
+}
 
 .search-badge{
     float:right;
-    background:#d32f2f;
-    color:#fff;
     padding:3px 10px;
     border-radius:15px;
     font-size:.72rem;
     font-weight:700;
     text-transform:uppercase;
+}
+
+.search-badge.incomplete{
+    background:#d32f2f;
+    color:#fff;
+}
+
+.search-badge.not-started{
+    background:#fbc02d;
+    color:#000;
+}
+
+/*=============== click view or download ===============*/
+.note-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.button-download{
+    background:#28a745;
+}
+
+.button-download:hover{
+    background:#218838;
+}
+
+
+@media screen and (max-width:768px){
+
+    .chapter-card{
+        display:flex !important;
+        flex-direction:row !important;
+        align-items:center !important;
+        justify-content:space-between !important;
+        text-align:left !important;
+        gap:1rem;
+    }
+
+    .chapter-content{
+        flex:1;
+    }
+
+    .chapter-number{
+        flex-shrink:0;
+    }
+
+    .button--small{
+        flex-shrink:0;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    .notes__container{
+        grid-template-columns:repeat(2,1fr);
+        gap:1rem;
+    }
+
+    .notes__card{
+        padding:1rem;
+    }
+
+    .notes__icon{
+        font-size:2rem;
+    }
+
+    .notes__title{
+        font-size:1rem;
+    }
+
+    .notes__buttons{
+        flex-direction:column;
+        gap:.6rem;
+    }
+
+    .button--small{
+        width:100%;
+    }
+
+    .notes__buttons .button{
+        padding:.55rem 1rem;
+        font-size:.8rem;
+    }
+
 }
