@@ -1657,23 +1657,45 @@ body.dark-mode * {
 @media screen and (max-width:768px){
 
     .chapter-card{
-        display:flex !important;
-        flex-direction:row !important;
-        align-items:center !important;
-        justify-content:space-between !important;
-        text-align:left !important;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
         gap:1rem;
-    }
-
-    .chapter-content{
-        flex:1;
+        padding:1rem 1.2rem;
+        text-align:left;
     }
 
     .chapter-number{
-        flex-shrink:0;
+    width:48px;
+    height:48px;
+    font-size:1rem;
+}
+
+    .chapter-content{
+    flex:1;
+    min-width:0;
+    padding-right:.5rem;
+}
+
+    .chapter-content h3{
+        font-size:1rem;
+        margin:0 0 .3rem;
+        word-break:break-word;
+    }
+
+    .chapter-content p{
+        font-size:.85rem;
+        margin:0 0 .35rem;
+    }
+
+    .chapter-status{
+        margin-top:.2rem;
     }
 
     .button--small{
+        padding:.75rem;
+        min-width:50px;
         flex-shrink:0;
     }
 
@@ -1704,8 +1726,19 @@ body.dark-mode * {
     }
 
     .button--small{
-        width:100%;
-    }
+    width:40px;
+    height:40px;
+    min-width:40px;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.button--small i{
+    font-size:1.1rem;
+}
 
     .notes__buttons .button{
         padding:.55rem 1rem;
