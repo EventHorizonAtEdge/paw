@@ -315,21 +315,21 @@ input {
 .home__social-link, 
 .home__info {
   color: var(--white-color);
-  text-shadow: 2px 2px 6px rgba(0,0,0,.8);
+  text-shadow: 2px 2px 6px rgba(0,0,0,1);
 }
 
 .home__data-subtitle {
   display: block;
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-75);
-  text-shadow: 2px 2px 6px rgba(0,0,0,.8);
+  text-shadow: 2px 2px 6px rgba(0,0,0,1);
 }
 
 .home__data-title {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
-  text-shadow: 2px 2px 6px rgba(0,0,0,.8);
+  text-shadow: 2px 2px 6px rgba(0,0,0,1);
 }
 
 .home__social {
@@ -1094,6 +1094,7 @@ input {
 
 .paranew {
   margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,1);
 }
 
 .instruction-box {
@@ -1332,6 +1333,8 @@ body.dark-mode * {
     box-shadow: 0 8px 30px rgba(0,0,0,.15);
     transition: .35s ease;
     cursor: pointer;
+    position:relative;
+    z-index:1;
 }
 
 .notes__card:hover{
@@ -1342,6 +1345,8 @@ body.dark-mode * {
 .subject-block{
     margin:4rem auto;
     max-width:900px;
+    position:relative;
+    z-index:1;
 }
 
 .subject-block h2{
@@ -1490,6 +1495,8 @@ body.dark-mode * {
     box-shadow:0 12px 35px rgba(0,0,0,.12);
 
     transition:.35s;
+    position:relative;
+    z-index:9999;
 }
 
 .notes-search:hover{
@@ -1551,27 +1558,28 @@ body.dark-mode * {
 }
 
 .search-results{
-
     position:absolute;
-
     top:100%;
     left:0;
-
     width:100%;
 
-    background:var(--container-color);
+    background:#1d2b36 !important;
 
+    border:1px solid #2d3f4f;
     border-radius:20px;
 
     margin-top:10px;
 
     overflow:hidden;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.18);
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
 
     display:none;
 
-    z-index:100;
+    z-index:10000;
+
+    opacity:1 !important;
+    backdrop-filter:none !important;
 }
 
 .notes-search{
@@ -1580,14 +1588,10 @@ body.dark-mode * {
 }
 
 .search-item{
-
+    background:#1d2b36 !important;
+    color:#fff;
     padding:15px 20px;
-
-    cursor:pointer;
-
-    transition:.25s;
-
-    border-bottom:1px solid rgba(255,255,255,.05);
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .search-item:hover{
@@ -1619,6 +1623,11 @@ body.dark-mode * {
     color:#000;
 }
 
+.chapter-status.in-progress{
+    background:#1976d2;
+    color:#fff;
+}
+
 .search-badge{
     float:right;
     padding:3px 10px;
@@ -1636,6 +1645,11 @@ body.dark-mode * {
 .search-badge.not-started{
     background:#fbc02d;
     color:#000;
+}
+
+.search-badge.in-progress{
+    background:#1976d2;
+    color:#fff;
 }
 
 /*=============== click view or download ===============*/
@@ -1710,6 +1724,8 @@ body.dark-mode * {
 
     .notes__card{
         padding:1rem;
+        position:relative;
+        z-index:1;
     }
 
     .notes__icon{
@@ -1743,6 +1759,88 @@ body.dark-mode * {
     .notes__buttons .button{
         padding:.55rem 1rem;
         font-size:.8rem;
+    }
+
+}
+
+
+
+/* New searchbar feature of arrow and EYE appearing while searching*/ 
+.search-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 18px;
+}
+
+.search-title{
+    flex:1;
+    min-width:0;
+    font-weight:600;
+}
+
+.search-actions{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-shrink:0;
+}
+
+.search-actions i{
+    font-size:1.2rem;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.search-actions i:hover{
+    color:var(--first-color);
+}
+
+.search-open{
+    color:inherit;
+    text-decoration:none;
+}
+
+@media screen and (max-width:768px){
+
+    .search-item{
+        gap:6px;
+        padding:10px 12px;
+    }
+
+    .search-title{
+        font-size:.9rem;
+    }
+
+    .search-badge{
+        font-size:.65rem;
+        padding:2px 6px;
+    }
+
+    .search-actions{
+        gap:6px;
+    }
+
+    .search-actions i{
+        font-size:1rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px){
+
+    .notes-search{
+        z-index:9999;
+    }
+
+    .search-results{
+        z-index:10000;
+        width:100%;
+        max-height:300px;
+        overflow-y:auto;
     }
 
 }

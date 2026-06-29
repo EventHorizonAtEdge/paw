@@ -222,41 +222,57 @@ return;
 
 matches.forEach(card=>{
 
-const item=document.createElement("div");
+    const item=document.createElement("div");
+    item.className="search-item";
 
-item.className="search-item";
+    const title = card.querySelector("h3").innerText;
 
-const title = card.querySelector("h3").innerText;
+    const pdf = card.querySelector("a").href;
 
-let status = "";
+    let status = "";
 
-const tags = (card.dataset.tags || "").toLowerCase();
+    const tags = (card.dataset.tags || "").toLowerCase();
 
-if (tags.includes("not-started")) {
-    status = '<span class="search-badge not-started">Not Started</span>';
-} else if (tags.includes("incomplete")) {
-    status = '<span class="search-badge incomplete">Incomplete</span>';
-}
+    if (tags.includes("not-started")) {
+        status = '<span class="search-badge not-started">Not Started</span>';
+    }
+    else if (tags.includes("in-progress")) {
+        status = '<span class="search-badge in-progress">In Progress</span>';
+    }
+    else if (tags.includes("incomplete")) {
+        status = '<span class="search-badge incomplete">Incomplete</span>';
+    }
 
-item.innerHTML = `${title} ${status}`;
+    item.innerHTML = `
+        <div class="search-title">${title}</div>
 
-item.onclick=()=>{
+        ${status}
 
-card.scrollIntoView({
+        <div class="search-actions">
+            <i class="ri-arrow-down-line search-scroll" title="Go to Chapter"></i>
+            <a href="${pdf}" target="_blank" class="search-open" title="Open PDF">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+    `;
 
-behavior:"smooth",
+    item.querySelector(".search-scroll").onclick=(e)=>{
+        e.stopPropagation();
 
-block:"center"
+        card.scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
 
-});
+        results.style.display="none";
+        input.value="";
+    };
 
-results.style.display="none";
+    item.querySelector(".search-open").onclick=(e)=>{
+        e.stopPropagation();
+    };
 
-input.value="";
-
-};
-
-results.appendChild(item);
+    results.appendChild(item);
 
 });
 
