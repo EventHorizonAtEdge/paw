@@ -190,7 +190,9 @@ chapters.forEach(card => {
 
     if (link && link.getAttribute("href") === "pdfunav.html") {
         const eye = link.querySelector(".ri-eye-line");
-        if (eye) eye.style.display = "none";
+        if (eye) {
+    eye.outerHTML = '<span class="na-label">NA</span>';
+}
     }
 });
 
@@ -264,12 +266,12 @@ matches.forEach(card=>{
         <i class="ri-arrow-down-line search-scroll" title="Go to Chapter"></i>
 
         ${
-            unavailable
-                ? ""
-                : `<a href="${pdf}" target="_blank" class="search-open" title="Open PDF">
-                        <i class="ri-eye-line"></i>
-                   </a>`
-        }
+    unavailable
+        ? `<span class="search-na">NA</span>`
+        : `<a href="${pdf}" target="_blank" class="search-open" title="Open PDF">
+                <i class="ri-eye-line"></i>
+           </a>`
+}
     </div>
 `;
     item.querySelector(".search-scroll").onclick=(e)=>{

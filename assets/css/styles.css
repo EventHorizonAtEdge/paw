@@ -1844,3 +1844,40 @@ body.dark-mode * {
     }
 
 }
+
+
+
+.search-na{
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--text-color-light);
+    padding: .2rem .45rem;
+    border: 1px solid var(--text-color-light);
+    border-radius: .35rem;
+    user-select: none;
+}
+
+.na-label{
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--text-color-light);
+}
+
+
+
+/* Center navigation */
+.header__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.header__links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
