@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Notes</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">EventHorizonAtEdge 2.3</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="plans.html" class="nav__link">Plans</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="acad.html" class="nav__link">Academics</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="notes.html" class="nav__link active-link">Notes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="more.html" class="nav__link">More</a>
+                        </li>
+                    </ul>
+
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+       <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/notes.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__data-title">Welcome Aboard !</h1>
+                        <h1 class="home__data-subtitle">Here is all notes<br> made from 2025-2026. <br></h1>
+                        <h1 class="home__data-subtitle">Website is in Maintenance.<br></h1>
+                        <p class="paranew"></p>
+                        <!-- <a href="#" class="button">Explore</a> -->
+
+                    </div>
+                    <!--
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>w
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                -->
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <div class="header__center">
+    <ul class="header__links">
+        <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+        </li>
+        <li class="nav__item">
+            <a href="plans.html" class="nav__link">Plans</a>
+        </li>
+        <li class="nav__item">
+            <a href="acad.html" class="nav__link">Academics</a>
+        </li>
+        <li class="nav__item">
+            <a href="notes.html" class="nav__link">Notes</a>
+        </li>
+        <li class="nav__item">
+            <a href="more.html" class="nav__link">More</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<!--==================== NOTES ====================-->
+<section class="notes section" id="notes">
+
+
+<div class="notes-search container">
+
+    <i class="ri-search-line search-icon"></i>
+
+    <input
+        type="text"
+        id="notesSearch"
+        class="notes-search-input"
+        placeholder="Search chapters..."
+        autocomplete="off"
+    >
+
+    <div id="searchResults" class="search-results"></div>
+
+</div>
+
+
+    <h2 class="section__title">
+        Class 11 & 12 Notes
+    </h2>
+
+
+
+    <div class="notes__container container grid">
+
+        <div class="notes__card">
+            <i class="ri-flask-line notes__icon"></i>
+
+            <h3 class="notes__title">Physics</h3>
+            <p class="notes__subtitle">11 & 12</p>
+
+            <div class="notes__buttons">
+                <a href="#physics11" class="button button--flex">
+                    Class 11
+                </a>
+
+                <a href="#physics12" class="button button--flex">
+                    Class 12
+                </a>
+            </div>
+        </div>
+
+        <div class="notes__card">
+            <i class="ri-test-tube-line notes__icon"></i>
+
+            <h3 class="notes__title">Chemistry</h3>
+            <p class="notes__subtitle">11 & 12</p>
+
+            <div class="notes__buttons">
+                <a href="#chem11" class="button button--flex">
+                    Class 11
+                </a>
+
+                <a href="#chem12" class="button button--flex">
+                    Class 12
+                </a>
+            </div>
+        </div>
+
+        <div class="notes__card">
+            <i class="ri-function-line notes__icon"></i>
+
+            <h3 class="notes__title">Mathematics</h3>
+            <p class="notes__subtitle">11 & 12</p>
+
+            <div class="notes__buttons">
+                <a href="#math11" class="button button--flex">
+                    Class 11
+                </a>
+
+                <a href="#math12" class="button button--flex">
+                    Class 12
+                </a>
+            </div>
+        </div>
+
+        <div class="notes__card">
+    <i class="ri-leaf-line notes__icon"></i>
+
+    <h3 class="notes__title">Biology</h3>
+    <p class="notes__subtitle">11 & 12</p>
+
+    <div class="notes__buttons">
+        <a href="#bio11" class="button button--flex">
+            Class 11
+        </a>
+
+        <a href="#bio12" class="button button--flex">
+            Class 12
+        </a>
+    </div>
+</div>
+</section>
+
+
+
+<section class="subject-notes section">
+
+
+<!--
+    add incomplete or complete in data-tags
+<span class="chapter-status incomplete">Incomplete</span>  
+<span class="chapter-status not-started">Not Started</span>  
+-->
+
+
+    <!--==================== CLASS 11 ====================-->
+    <h2 class="section__title">Class 11</h2>
+
+    <!-- Physics -->
+    <div class="subject-block" id="physics11">
+        <h2><i class="ri-flask-line"></i> Physics</h2>
+
+        <div class="chapter-card" data-tags="arjuna rajwant">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Units and Measurements</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1vzymUGcYQH24jnwicE-rYtIms-YIaYyn/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="arjuna rajwant">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Motion in 1D</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/17v2WM-zgMc1XSihGU2lj8KML_sstGans/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>Motion in 2D</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1Pp0cy2BQT1lvtkwXhx1p_Xm4XuS6tfIC/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Laws of Motion</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1GT3RIIV9GAyfitQmJrcrIyYZ0zVTzWN9/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>Circular Motion</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">06</span>
+
+            <div class="chapter-content">
+                <h3>Work, Energy and Power</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1_M0XJb523DoYSy0pKOn2fU5reAKru9dz/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">07</span>
+
+            <div class="chapter-content">
+                <h3>Centre of Mass & System of Particles</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+        <div class="chapter-card" data-tags="incomplete arjuna rajwant">
+            <span class="chapter-number">08</span>
+
+            <div class="chapter-content">
+                <h3>Rotational Motion</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+            <span class="chapter-status incomplete">Incomplete</span>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">09</span>
+
+            <div class="chapter-content">
+                <h3>Mechanical Properties of Fluids</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">10</span>
+
+            <div class="chapter-content">
+                <h3>Gravitation</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">11</span>
+
+            <div class="chapter-content">
+                <h3>Mechanical Properties of Solids</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">12</span>
+
+            <div class="chapter-content">
+                <h3>Thermal Properties of Matter</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">13</span>
+
+            <div class="chapter-content">
+                <h3>KTG & Thermodynamics</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">14</span>
+
+            <div class="chapter-content">
+                <h3>Oscillations</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+        <div class="chapter-card" data-tags="complete arjuna rajwant">
+            <span class="chapter-number">15</span>
+
+            <div class="chapter-content">
+                <h3>Waves</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="inomplete arjuna rajwant">
+            <span class="chapter-number">16</span>
+
+            <div class="chapter-content">
+                <h3>Instruments</h3>
+                <p>Arjuna JEE 2025 • Rajwant Sir</p> 
+            </div>
+            <span class="chapter-status not-started">Not Started</span> 
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+    </div>
+    
+
+
+    <!-- Chemistry -->
+    <div class="subject-block" id="chem11">
+        <h2><i class="ri-test-tube-line"></i>Chemistry</h2>
+
+        <h3>Physical Chem</h3>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Some Basic Concepts of Chemistry</h3>
+                <p>Arjuna NEET 2025 • Sudhanshu Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Structure of Atom</h3>
+                <p>Arjuna NEET 2025 • Sudhanshu Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started arjuna jee nikhil">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>States of Matter</h3>
+                <p>Arjuna JEE 2025 • Nikhil Saini Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="arjuna jee nikhil">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Thermodynamics</h3>
+                <p>Arjuna JEE 2025 • Nikhil Saini Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="arjuna jee nikhil">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>Chemical Equilibrium</h3>
+                <p>Arjuna JEE 2025 • Nikhil Saini Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">06</span>
+
+            <div class="chapter-content">
+                <h3>Ionic Equilibrium</h3>
+                <p>Arjuna JEE 2025 • Nikhil Saini Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">07</span>
+
+            <div class="chapter-content">
+                <h3>Redox Reactions</h3>
+                <p>Arjuna JEE 2025 • Nikhil Saini Sir</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/174m-ROEPzmRsoCGrmvMM0Qtys95uSDaw/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+        <br>
+        <br>
+
+        <h3>Inorganic Chem</h3>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Classification of Elements and Periodicity in Properties</h3>
+                <p>Arjuna JEE 2025 • Rahul Dudi Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+        
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">02</span>
+
+        <div class="chapter-content">
+                <h3>Chemical Bonding and Molecular Structure</h3>
+                <p>Arjuna JEE 2025 • Rahul Dudi Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">03</span>
+
+        <div class="chapter-content">
+                <h3>P-block Elements</h3>
+                <p>Arjuna JEE 2025 • Rahul Dudi Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started ioc rahul dudi">
+            <span class="chapter-number">04</span>
+
+        <div class="chapter-content">
+                <h3>S-Block Elements</h3>
+                <p>Arjuna JEE 2025 • Rahul Dudi Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">05</span>
+
+        <div class="chapter-content">
+                <h3>Hydrogen</h3>
+                <p>Arjuna JEE 2025 • Rahul Dudi Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+        <br>
+        <br>    
+
+
+        <h3>Organic Chem</h3>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>IUPAC Nomenclature</h3>
+                <p>Arjuna JEE 2.0 2025 • Rohit Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>General Organic Chemistry</h3>
+                <p>Prayaj JEE 2.0 205 • Pankaj Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>Isomerism</h3>
+                <p>Prayaj JEE 2.0 205 • Pankaj Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Purification and Analysis of Organic Compound</h3>
+                <p>Arjuna JEE 2.0 2025 • Rohit Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>Environmental Chemistry</h3>
+                <p>Arjuna JEE 2.0 2025 • Rohit Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">06</span>
+
+            <div class="chapter-content">
+                <h3>Hydrocarbon</h3>
+                <p>Prayaj JEE 2.0 205 • Pankaj Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Maths -->
+    <div class="subject-block" id="math11">
+        <h2><i class="ri-function-line"></i> Mathematics</h2>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Basic Mathematics</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Sets</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>Relation & Function</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Trigonometric Identities</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>Trigonometric Equations</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">06</span>
+
+            <div class="chapter-content">
+                <h3>Quadratic Equations</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/16_K7m4YUzDY4iCBlJOLuw35dPYZnkUYg/preview"_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">07</span>
+
+            <div class="chapter-content">
+                <h3>Complex Numbers -I</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">08</span>
+
+            <div class="chapter-content">
+                <h3>Sequence and Series</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">09</span>
+
+            <div class="chapter-content">
+                <h3>Permutation and Combination</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">10</span>
+
+            <div class="chapter-content">
+                <h3>Binomial Theorem</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">11</span>
+
+            <div class="chapter-content">
+                <h3>Straight Lines</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">12</span>
+
+            <div class="chapter-content">
+                <h3>Circles</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">13</span>
+
+            <div class="chapter-content">
+                <h3>Parabola</h3>
+                <p>Arjuna JEE 2.0 2025 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">14</span>
+
+            <div class="chapter-content">
+                <h3>Ellipse</h3>
+                <p>Arjuna JEE 2.0 2025 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">15</span>
+
+            <div class="chapter-content">
+                <h3>Complex Numbers-2</h3>
+                <p>Arjuna JEE 2026 • Tarun Khandelwal Sir (AIR 289)</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">16</span>
+
+            <div class="chapter-content">
+                <h3>Hyperbola</h3>
+                <p>Arjuna JEE 2.0 2025 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">17</span>
+
+            <div class="chapter-content">
+                <h3>Limits and Derivatives</h3>
+                <p>Prayas JEE 2025 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">18</span>
+
+            <div class="chapter-content">
+                <h3>Statistics</h3>
+                <p>Prayas JEE 2025 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">19</span>
+
+            <div class="chapter-content">
+                <h3>Probability</h3>
+                <p>Prayas JEE 2025 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started ashish lakshya lux">
+            <span class="chapter-number">20</span>
+
+            <div class="chapter-content">
+                <h3>Solution of Triangle</h3>
+                <p>Arjuna JEE 2.0 2025 • Ashish Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started ashish lakshya lux">
+            <span class="chapter-number">21</span>
+
+            <div class="chapter-content">
+                <h3>Introduction to 3D Geometry</h3>
+                <p>Prayas JEE 2025 • Ashish Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Biology -->
+    <div class="subject-block" id="bio11">
+        <h2><i class="ri-leaf-line"></i> Biology</h2>
+
+        <h3>Botany</h3>
+
+        <div class="chapter-card" data-tags="not-started botany">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Plant Kingdom</h3>
+                <p>NA • NA</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started botany">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Morphology of Flowering Plants</h3>
+                <p>NA • NA</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started botany">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3>Anatomy of Flowering Plants</h3>
+                <p>NA • NA</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started botany">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3>Photosynthesis in Higher Plants</h3>
+                <p>NA • NA</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started botany">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3>Respiration in Plants</h3>
+                <p>NA • NA</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started botany">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3>Plant Growth and Development</h3>
+                <p>NA • NA</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+       
+
+        <h3>Zoolgy</h3>
+
+        <div class="chapter-card" data-tags="not-started zoology">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>The Living World</h3>
+                <p>NA • NA/p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started zoology">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Biological Classification</h3>
+                <p>NA • NAt</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started zoology">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>Animal Kingdom</h3>
+                <p>NA • NAt</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Structural Organisation in Animals</h3>
+                <p>Arjuna NEET 2025 • Samapti Sinha Ma'am</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>Cell: The Unit of Life</h3>
+                <p>Arjuna NEET 2025 • Rupesh Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started zoology">
+            <span class="chapter-number">06</span>
+
+            <div class="chapter-content">
+                <h3>Biomolecules</h3>
+                <p>NA • NAt</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started zoology">
+            <span class="chapter-number">07</span>
+
+            <div class="chapter-content">
+                <h3>Cell Cycle and Cell Division</h3>
+                <p>NA • NAt</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started zoology">
+            <span class="chapter-number">08</span>
+
+            <div class="chapter-content">
+                <h3>Human Physiology</h3>
+                <p>NA • NAt</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+    </div>
+
+
+
+    <!--==================== CLASS 12 ====================-->
+
+    <h2 class="section__title">Class 12</h2>
+
+    <!-- Physics -->
+    <div class="subject-block" id="physics12">
+        <h2><i class="ri-flask-line"></i> Physics</h2>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Electric Charges and Fields</h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">0</span>
+
+            <div class="chapter-content">
+                <h3></h3>
+                <p>Lakshya JEE 2026 • Rajwant Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Chemistry -->
+    <div class="subject-block" id="chem12">
+        <h2><i class="ri-test-tube-line"></i> Chemistry</h2>
+
+        <h3>Physical Chemistry</h3>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Solutions</h3>
+                <p>Lakshya JEE 2026 • Faisal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Chemical Kinetics</h3>
+                <p>Lakshya JEE 2026 • Faisal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>Electrochemistry</h3>
+                <p>Prayas JEE 2026 • Faisal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started faisal">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Solid State</h3>
+                <p>Lakshya JEE 2026 • Faisal Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started faisal">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>Surface Chemistry</h3>
+                <p>Lakshya JEE 2026 • Faisal Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        
+
+
+
+
+        <h3>Inorganic Chemistry</h3>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Chemical Coordination</h3>
+                <p>Lakshya JEE 2026 • Rahul Dudi Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started rahul dudi lakshya lux">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>The p-Block Elements (XII)</h3>
+                <p>Lakshya JEE 2026 • Rahul Dudi Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started rahul dudi lakshya lux">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>The d and f-Block Elements</h3>
+                <p>Lakshya JEE 2026 • Rahul Dudi Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+        <div class="chapter-card" data-tags="in-progress rahul dudi lakshya lux">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Principles of Qualitative Analysis : Salt analysis</h3>
+                <p>Lakshya JEE 2026 • Rahul Dudi Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+        <div class="chapter-card" data-tags="not-started rahul dudi lakshya lux">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>General Principles and Processes of Isolation of Metals</h3>
+                <p>Lakshya JEE 2026 • Rahul Dudi Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+
+
+
+
+        <h3>Organic Chemistry</h3>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Haloalkanes and Haloarenes</h3>
+                <p>Lakshya JEE 2026 • Rohit Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Alcohols, Phenols and Ethers</h3>
+                <p>Lakshya JEE 2026 • Rohit Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>Aldehydes, Ketones and Carboxylic Acids</h3>
+                <p>Lakshya JEE 2026 • Rohit Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Amines</h3>
+                <p>Lakshya JEE 2026 • Rohit Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started rohit lux lakshya">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>Biomolecules</h3>
+                <p>Lakshya JEE 2026 • Rohit Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started rohit lux lakshya">
+            <span class="chapter-number">06</span>
+
+            <div class="chapter-content">
+                <h3>Polymers</h3>
+                <p>Lakshya JEE 2026 • Rohit Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started rohit lux lakshya">
+            <span class="chapter-number">07</span>
+
+            <div class="chapter-content">
+                <h3>Chemistry In Everyday Life</h3>
+                <p>Lakshya JEE 2026 • Rohit Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started rohit lux lakshya  ">
+            <span class="chapter-number">08s</span>
+
+            <div class="chapter-content">
+                <h3>Environmental Chemistry</h3>
+                <p>Lakshya JEE 2026 • Rohit Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Maths -->
+    <div class="subject-block" id="math12">
+        <h2><i class="ri-function-line"></i> Mathematics</h2>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Determinants</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Matrices</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>Relations and Functions</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Inverse Trigonometric Functions</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>Limit, Continuity and Differentiability</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">06</span>
+
+            <div class="chapter-content">
+                <h3>Method of Differentiation</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">07</span>
+
+            <div class="chapter-content">
+                <h3>Application of Derivatives</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">08</span>
+
+            <div class="chapter-content">
+                <h3>Indefinite Integration</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="incomplete ashish lakshya lux">
+            <span class="chapter-number">09</span>
+
+            <div class="chapter-content">
+                <h3>Definite Integration</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status incomplete">Incomplete</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">10</span>
+
+            <div class="chapter-content">
+                <h3>Application of integrals</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="incomplete ashish lakshya lux">
+            <span class="chapter-number">11</span>
+
+            <div class="chapter-content">
+                <h3>Differential Equation</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status incomplete">Incomplete</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="incomplete ashish lakshya lux">
+            <span class="chapter-number">12</span>
+
+            <div class="chapter-content">
+                <h3>Vector Algebra</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p> 
+            </div>
+            <span class="chapter-status incomplete">Incomplete</span> 
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="incomplete ashish lakshya lux vector">
+            <span class="chapter-number">13</span>
+
+            <div class="chapter-content">
+                <h3>Three Dimensional Geometry</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status incomplete">Incomplete</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started ashish lakshya lux">
+            <span class="chapter-number">14</span>
+
+            <div class="chapter-content">
+                <h3>Probability 12th</h3>
+                <p>Lakshya JEE 2026 • Ashish Aggarwal Sir</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span> 
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Biology -->
+    <div class="subject-block" id="bio12">
+        <h2><i class="ri-leaf-line"></i> Biology</h2>
+
+        <h3>Botany</h3>
+
+        <div class="chapter-card" data-tags="not-started botany reproduction">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Sexual Reproduction in Flowering Plants</h3>
+                <p>NA • NA</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="https://drive.google.com/file/d/1XVkyM7ZBpagKvfHs5evXN_Xp1vqxmfB7/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+        <div class="chapter-card" data-tags="">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>Biology and Human Welfares</h3>
+                <p>NA • NA</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="yakeen samapti biotech">
+            <span class="chapter-number">01</span>
+
+            <div class="chapter-content">
+                <h3>Biotechnology and Its Applications</h3>
+                <p>Yakeen NEET 2.0 2025 • Samapti Sinha Ma'am</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+
+
+
+
+        <h3>Zoology</h3>
+
+        <div class="chapter-card" data-tags="yakeen samapti Reproduction">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Human Reproduction</h3>
+                <p>Yakeen NEET 2.0 2025 • Samapti Sinha Ma'am</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="not-started zoology">
+            <span class="chapter-number">03</span>
+
+            <div class="chapter-content">
+                <h3>Reproductive Health</h3>
+                <p>NA • NA</p>
+            </div>
+            <span class="chapter-status not-started">Not Started</span>  
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="yakeen rishabh choubey dna genetics">
+            <span class="chapter-number">04</span>
+
+            <div class="chapter-content">
+                <h3>Principles of Inheritance and Variation</h3>
+                <p>Yakeen NEET 2.0 2024 • Rishabh Choubey Sir✨</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="yakeen rishabh choubey dna genetics">
+            <span class="chapter-number">05</span>
+
+            <div class="chapter-content">
+                <h3>Molecular Basis of Inheritance</h3>
+                <p>Yakeen NEET 2.0 2024 • Rishabh Choubey Sir✨</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="in-progress rishabh choubey yt ">
+            <span class="chapter-number">02</span>
+
+            <div class="chapter-content">
+                <h3>Evolution</h3>
+                <p>Batch 2026 • Rishabh Choubey Sir✨</p>
+            </div>
+            <span class="chapter-status in-progress">In Progress</span>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="yakeen samapti ">
+            <span class="chapter-number">07</span>
+
+            <div class="chapter-content">
+                <h3>Human Health and Disease</h3>
+                <p>Yakeen NEET 2.0 2025 • Samapti Sinha Ma'am</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1FcM0vgtphNRN_vrr9G2CWgfRNhu0wPQF/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="yakeen rishabh choubey">
+            <span class="chapter-number">08</span>
+
+            <div class="chapter-content">
+                <h3>Microbes in Human Welfare</h3>
+                <p>Yakeen NEET 2.0 2024 • Rishabh Choubey Sir✨</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1Ksw8vPHOHEQy8hDimA2gay6FWxs8Eo6G/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="rishabh choubey yt">
+            <span class="chapter-number">09</span>
+
+            <div class="chapter-content">
+                <h3>Biotechnology: Principles and Processes</h3>
+                <p>Batch 2026 • Rishabh Choubey Sir✨</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="yakeen rishabh choubey">
+            <span class="chapter-number">10</span>
+
+            <div class="chapter-content">
+                <h3>Organisms and Populations</h3>
+                <p>Yakeen NEET 2.0 2024 • Rishabh Choubey Sir✨</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="yakeen rishabh choubey">
+            <span class="chapter-number">11</span>
+
+            <div class="chapter-content">
+                <h3>Ecosystem</h3>
+                <p>Yakeen NEET 2.0 2024 • Rishabh Choubey Sir✨</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1BaeKNK-r3imPf8n3AzyoVjUhZe58vFRW/preview" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+
+        <div class="chapter-card" data-tags="yakeen rishabh choubey">
+            <span class="chapter-number">12</span>
+
+            <div class="chapter-content">
+                <h3>Biodiversity and Conservation</h3>
+                <p>Yakeen NEET 2.0 2024 • Rishabh Choubey Sir✨</p>
+            </div>
+
+            <a href="pdfunav.html" target="_blank" rel="noopener noreferrer" class="button button--small">
+                <i class="ri-eye-line"></i>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<!--
+
+The only thing you'll edit
+
+Every time you add a chapter, you'll only duplicate this:
+
+<div class="chapter-card"
+     id="phy11-gravitation"
+     data-subject="Physics"
+     data-class="Class 11">
+
+    <div class="chapter-content">
+        <h3>Gravitation</h3>
+        <p>Handwritten Notes</p>
+    </div>
+
+    <a href="notes/physics11/gravitation.pdf"
+       class="button button--small">
+       Open
+    </a>
+
+</div>
+
+Notice these three things:
+
+id="phy11-gravitation"
+
+data-subject="Physics"
+
+data-class="Class 11"
+
+That's all the search needs.
+
+You never edit JavaScript.
+
+
+
+
+-->
+
+
+
+
+
+
+     
+
+          <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">AJ</h3>
+                        <p class="footer__description">1 <br>2<br> 3</p>
+                        <!--
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                        -->
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Links</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Plans</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Academics</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="href="more.html#faq" class="footer__link">Notes</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="href="more.html#faq" class="footer__link">More</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">H1</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Link1</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Link2</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Link3</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">H2</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Link1</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Link2</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Link3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2026 EventHorizonAtEdge. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link"></a>
+                        <a href="#" class="footer__terms-link"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
