@@ -140,6 +140,15 @@ const iconTheme = 'ri-sun-line'
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
+if (selectedTheme) {
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+} else {
+    // Default to dark mode for first-time visitors
+    document.body.classList.add(darkTheme)
+    themeButton.classList.add(iconTheme)
+}
+
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
@@ -359,3 +368,24 @@ items[selected].click();
 
 }
 
+
+
+
+
+
+
+
+
+
+const searchBar = document.querySelector(".notes-search");
+
+// Remember where the search bar originally is
+const searchTop = searchBar.offsetTop;
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= searchTop - parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height'))) {
+        searchBar.classList.add("fixed-search");
+    } else {
+        searchBar.classList.remove("fixed-search");
+    }
+});
