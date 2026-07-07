@@ -371,12 +371,6 @@ items[selected].click();
 
 
 
-
-
-
-
-
-
 const searchBar = document.querySelector(".notes-search");
 
 // Remember where the search bar originally is
@@ -389,3 +383,22 @@ window.addEventListener("scroll", () => {
         searchBar.classList.remove("fixed-search");
     }
 });
+
+
+
+const cards = document.querySelectorAll(".chapter-card");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // animate only once
+        }
+
+    });
+}, {
+    threshold: 0.35
+});
+
+cards.forEach(card => observer.observe(card));
