@@ -1557,3 +1557,376 @@ transition:
         transform: translateX(0);
     }
 }
+
+
+
+
+
+
+
+/*=============== ACADEMICS PORTAL ===============*/
+
+.portal{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:5rem 1rem 6rem;
+    gap:3rem;
+}
+
+.portal__logo{
+    width:75%;
+    max-width:900px;
+    min-width:250px;
+    height:auto;
+    animation:floatLogo 5s ease-in-out infinite;
+}
+
+.portal__buttons{
+    width:min(1100px,90%);
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:1.5rem;
+}
+
+.portal__button{
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:95px;
+
+    border-radius:22px;
+
+    text-decoration:none;
+    color:white;
+
+    font-size:1.15rem;
+    font-weight:700;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    overflow:hidden;
+
+    transition:.35s cubic-bezier(.22,1,.36,1);
+}
+
+.portal__button::after{
+
+content:"";
+
+position:absolute;
+
+width:140px;
+height:140px;
+
+background:radial-gradient(circle,
+rgba(255,255,255,.22),
+transparent 70%);
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%) scale(.2);
+
+opacity:0;
+
+transition:.45s;
+
+}
+
+.portal__button:hover{
+
+transform:
+translateY(-10px)
+scale(1.03);
+
+border-color:#72b2ff;
+
+box-shadow:
+0 25px 60px rgba(50,100,255,.18);
+
+}
+
+.portal__button:hover::after{
+
+opacity:1;
+
+transform:
+translate(-50%,-50%)
+scale(2);
+
+}
+
+@keyframes floatLogo{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    .portal__logo{
+        width:75%;
+    }
+
+    .portal__buttons{
+        grid-template-columns:1fr;
+    }
+
+    .portal__button{
+        height:85px;
+        font-size:1.1rem;
+    }
+
+}
+
+
+/*================ SPACE EVENT HORIZON BACKGROUND ================*/
+
+.home{
+    position:relative;
+    overflow:hidden;
+    min-height:100vh;
+}
+
+.home__bg{
+    position:absolute;
+    inset:0;
+    z-index:-10;
+
+    background:
+        radial-gradient(circle at 50% 45%,
+            rgba(0,0,0,0) 0%,
+            rgba(0,0,0,.15) 18%,
+            rgba(0,0,0,.88) 26%,
+            #020204 36%),
+
+        radial-gradient(circle at 50% 45%,
+            rgba(70,120,255,.35) 0%,
+            rgba(70,120,255,.18) 28%,
+            transparent 55%),
+
+        radial-gradient(circle at 48% 48%,
+            rgba(170,90,255,.18),
+            transparent 60%),
+
+        radial-gradient(circle at 15% 15%,
+            rgba(0,180,255,.12),
+            transparent 40%),
+
+        radial-gradient(circle at 85% 20%,
+            rgba(120,70,255,.10),
+            transparent 35%),
+
+        linear-gradient(180deg,
+            #020205,
+            #050811,
+            #090d18,
+            #111827);
+}
+
+
+.portal{
+animation:fadeUp .9s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+
+
+/* blob */
+
+.blob{
+
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+
+    animation:orbit 20s ease-in-out infinite;
+
+    opacity:.45;
+
+    z-index:-9;
+}
+
+.blob1{
+
+    width:420px;
+    height:420px;
+
+    background:#4f84ff;
+
+    left:-120px;
+    top:120px;
+}
+
+.blob2{
+
+    width:350px;
+    height:350px;
+
+    background:#7f5cff;
+
+    right:-80px;
+    top:40%;
+
+    animation-delay:-8s;
+}
+
+.blob3{
+
+    width:280px;
+    height:280px;
+
+    background:#00d0ff;
+
+    bottom:-100px;
+    left:40%;
+
+    animation-delay:-14s;
+}
+
+@keyframes orbit{
+
+0%,100%{
+transform:translate(0,0);
+}
+
+25%{
+transform:translate(70px,-40px);
+}
+
+50%{
+transform:translate(-50px,60px);
+}
+
+75%{
+transform:translate(40px,40px);
+}
+
+}
+
+
+
+
+
+/* portal logo */
+
+.portal__logo{
+
+    width:75%;
+    max-width:900px;
+
+    position:relative;
+
+    filter:
+        drop-shadow(0 0 30px rgba(90,140,255,.4))
+        drop-shadow(0 0 80px rgba(130,70,255,.25));
+
+    animation:
+        floatLogo 5s ease-in-out infinite,
+        pulseRing 6s ease infinite;
+
+}
+
+
+@keyframes pulseRing{
+
+0%,100%{
+
+filter:
+drop-shadow(0 0 25px rgba(90,140,255,.35))
+drop-shadow(0 0 60px rgba(140,70,255,.2));
+
+}
+
+50%{
+
+filter:
+drop-shadow(0 0 45px rgba(90,170,255,.6))
+drop-shadow(0 0 100px rgba(140,70,255,.45));
+
+}
+
+}
+
+
+/*Stars */
+
+.stars{
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white .8px, transparent .8px),
+        radial-gradient(white 1.3px, transparent 1.3px);
+
+    background-size:
+        120px 120px,
+        180px 180px,
+        250px 250px;
+
+    background-position:
+        0 0,
+        50px 80px,
+        120px 20px;
+
+    opacity:.18;
+
+    animation:starsMove 90s linear infinite;
+
+    z-index:-8;
+}
+
+@keyframes starsMove{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-300px);
+
+}
+
+}
